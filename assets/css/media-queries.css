@@ -1,0 +1,196 @@
+@media screen and (max-width:1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .menu-toggler {
+        display: block;
+    }
+
+    .navbar-menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #3e0018;
+        top: 0;
+        right: -100%;
+        max-width: 400px;
+        padding: 80px 50px;
+        transition: .3s linear;
+    }
+
+    .navbar-menu a {
+        display: block;
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .navbar-menu.active {
+        right: 0;
+    }
+
+    .sticky .navbar-menu {
+        background-color: #3e0018;
+    }
+
+    .sticky .navbar-menu a {
+        color: #fff;
+    }
+
+    .sticky .navbar-menu a:hover {
+        color: #885c7e;
+    }
+
+    .menu-toggler.active span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 4px;
+    }
+
+    .menu-toggler.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggler.active span:nth-child(3) {
+        transform: rotate(45deg);
+        bottom: 14px;
+    }
+
+    .content {
+        max-width: 800px;
+    }
+
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container {
+        width: 100%;
+    }
+
+    .product-card {
+        flex: 1 21%;
+    }
+
+    .products .product-card:first-child,
+    .products .product-card:nth-child(2) {
+        flex: 2 46%;
+    }
+
+    .wine-card {
+        width: 400px;
+        height: 570px;
+        flex-direction: column;
+    }
+
+    .wine-card .left-column {
+        width: 100%;
+    }
+
+    .wine-card .left-column img {
+        width: 60%;
+    }
+
+    .wine-card .right-column {
+        width: 100%;
+    }
+
+    .wine-card .right-column .product-name h1 {
+        font-size: 1.2rem;
+        margin-left: 20px;
+    }
+
+    .wine-card .right-column .infos {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .about-section {
+        padding: 0;
+    }
+
+    .inner-container {
+        padding: 60px;
+    }
+
+    .product-card {
+        flex: 1 46%;
+    }
+
+    .wine-card {
+        width: 300px;
+        height: 520px;
+    }
+
+    .wine-card .right-column .infos {
+        margin-left: 20px;
+    }
+
+    #edit_user .buttonsRow a {
+        margin: 5%;
+        flex-direction: column;
+    }
+
+    table {
+        display: block;
+
+    }
+
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block;
+
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    table tbody tr td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+    }
+
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    table tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 40%;
+        left: 10px;
+        top: 0;
+    }
+
+    #my_wines, #my_users section {
+        background: #fff;
+        font: 400 14px ;
+        padding: 20px;
+    }
+
+   
+
+    @media screen and (max-width:320px) {
+        .wine-card {
+            width: 280px;
+            height: 530px;
+        }
+    }
+}
